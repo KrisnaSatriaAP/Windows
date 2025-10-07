@@ -1,0 +1,22 @@
+Cara Mengatasi Error Guest Access di File Sharing Windows 11
+
+Masalah ini muncul karena Windows 11 secara default memblokir akses guest (tanpa username/password) ke folder jaringan demi alasan keamanan. Windows 10 biasanya masih mengizinkan akses ini, sehingga file sharing bisa berjalan di sana.
+
+Opsi 1 – Aktifkan Guest Access via Group Policy
+1. Tekan Win + R, ketik: gpedit.msc lalu tekan Enter.
+2. Buka: Computer Configuration → Administrative Templates → Network → Lanman Workstation.
+3. Di panel kanan, double-click pada: Enable insecure guest logons.
+4. Pilih Enabled, lalu klik Apply → OK.
+5. Restart komputer Anda, lalu coba akses lagi folder jaringan (misalnya \\10.100.100.52).
+
+Opsi 2 – Lewat Registry Editor (Untuk Windows 11 Home)
+1. Tekan Win + R, ketik: regedit lalu tekan Enter.
+2. Navigasi ke: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters
+3. Klik kanan di panel kanan → New → DWORD (32-bit) Value, beri nama: AllowInsecureGuestAuth.
+4. Klik dua kali entri tersebut, ubah Value data menjadi 1, lalu klik OK.
+5. Tutup Registry Editor, restart PC, dan coba akses lagi folder jaringan.
+
+Opsi 3 – Gunakan User Authentication
+Cara yang lebih aman adalah menggunakan username dan password saat mengakses folder sharing. Pastikan PC server memiliki akun pengguna yang dapat digunakan untuk login dari jaringan.
+Contoh format akses: \\10.100.100.52, lalu masukkan username dan password yang sesuai.
+Dengan mengikuti salah satu langkah di atas, Windows 11 akan bisa kembali mengakses file sharing yang sebelumnya hanya bisa diakses dari Windows 10.
