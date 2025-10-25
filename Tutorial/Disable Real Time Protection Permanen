@@ -1,0 +1,15 @@
+Metode 1: Menggunakan Editor Kebijakan Grup Lokal (Windows Pro dan Enterprise) 
+Buka Editor Kebijakan Grup Lokal dengan mencari gpedit.msc di menu Mulai atau dengan mengetik gpedit.msc di dialog "Jalankan" (tombol Windows + R). 
+Navigasi ke Konfigurasi Komputer > Templat Administratif > Komponen Windows > Microsoft Defender Antivirus > Perlindungan Waktu Nyata. 
+Di panel sebelah kanan, temukan dan klik dua kali kebijakan "Matikan perlindungan waktu nyata". 
+Pilih opsi Diaktifkan. 
+Klik Terapkan dan kemudian OK. 
+Nyalakan ulang komputer Anda untuk menerapkan perubahan. 
+
+Metode 2: Menggunakan Editor Registri (Windows Home)
+Buka Registry Editor dengan mencari regedit di menu Start dan menekan Enter. 
+Arahkan ke kunci berikut: HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender. 
+Jika kunci bernama Windows Defender tidak ada, Anda mungkin perlu membuatnya dengan mengklik kanan kunci Microsoft , memilih Baru > Kunci, dan menamainya Windows Defender. 
+Klik kanan pada kunci Windows Defender , pilih Baru > Nilai DWORD (32-bit), dan beri nama DisableAntiSpyware. 
+Klik dua kali nilai DisableAntiSpyware yang baru dan ubah data Nilainya dari 0 menjadi 1. 
+Klik OK dan mulai ulang komputer Anda untuk menerapkan perubahan. 
