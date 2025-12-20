@@ -1,0 +1,3 @@
+shutdown /s /f /t 0
+
+jika tidak bisa buka cmd dengan run as administrator
