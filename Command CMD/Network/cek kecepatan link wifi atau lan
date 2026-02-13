@@ -1,0 +1,12 @@
+command :
+wmic nic where "NetEnabled=true" get Name, Speed
+
+hasil
+
+Name                                      Speed
+Intel(R) Ethernet Connection (4) I219-LM  1000000000
+Intel(R) Dual Band Wireless-AC 8265       300000000
+VirtualBox Host-Only Ethernet Adapter     1000000000
+
+1 Gbps=1000000000
+300 Mbps=300000000
