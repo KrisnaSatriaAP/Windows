@@ -1,0 +1,4 @@
+command :
+ipconfig /release
+lalu
+ipconfig /renew
