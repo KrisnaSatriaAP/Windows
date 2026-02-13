@@ -2,3 +2,35 @@
 
 command:
 ping 8.8.8.8 -f -l 1472
+
+8.8.8.8 → alamat tujuan (DNS Google)
+-l 1472 → ukuran payload 1472 byte
+-f → jangan izinkan fragmentasi (Don't Fragment)
+
+Kenapa 1472?
+Karena total MTU Ethernet normal itu 1500 byte
+Header IP + ICMP = 28 byte
+Jadi 1500 - 28 = 1472
+
+Kalau hasilnya:
+
+1. Reply from 8.8.8.8
+Berarti MTU 1500 aman, nggak ada fragmentasi
+
+2. Packet needs to be fragmented but DF set
+Berarti jalur internet kamu nggak support MTU 1500 penuh
+Biasanya koneksi PPPoE sering MTU-nya 1492
+
+Kalau muncul error fragmentasi, coba turunin angka:
+ping 8.8.8.8 -f -l 1464
+
+Turunin sampai dapat reply
+Misalnya maksimal sukses di 1464 → berarti MTU kamu:
+1464 + 28 = 1492
+Itu biasanya MTU PPPoE
+
+Ini sering dipakai buat:
+- Game yang sering disconnect
+- VPN bermasalah
+- Website tertentu nggak bisa kebuka
+- Path MTU discovery issue
