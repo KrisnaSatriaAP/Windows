@@ -1,2 +1,3 @@
+#jika tidak bisa, run cmd as administrator dulu
 command :
 ipconfig /flushdns
