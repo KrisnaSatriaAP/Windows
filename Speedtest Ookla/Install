@@ -1,0 +1,30 @@
+run cmd as administrator
+
+command:
+winget install Ookla.Speedtest.CLI
+atau
+winget install --id Ookla.Speedtest.CLI --exact
+
+jika
+Error “No package found matching input criteria” artinya source msstore nggak nemu paketnya
+Pertama cek dulu apakah paketnya ada:
+winget search speedtest
+contoh hasil:
+Name                               Id                                Version      Match                        Source
+----------------------------------------------------------------------------------------------------------------------
+Speedtest +                        9P0WS875JXQ8                      Unknown                                   msstore
+Speedtest by Ookla                 9NBLGGH4Z1JC                      Unknown                                   msstore
+OpenSpeedTest-Server               9PBKQKR4X79R                      Unknown                                   msstore
+Speedtest Pro: Internet Speed Test 9N7X5HL3SN8K                      Unknown                                   msstore
+librespeed-cli                     LibreSpeed.librespeed-cli         1.0.12       Tag: speedtest               winget
+网速管家                           Magnate.SpeedManager              3.11.1       Tag: speedtest               winget
+网维助手                           Magnate.SpeedManager.Pro          2.13.0       Tag: speedtest               winget
+Speedtest CLI                      Ookla.Speedtest.CLI               1.2.0        Tag: speedtest               winget
+Speedtest by Ookla                 Ookla.Speedtest.Desktop           1.14.198.001 Tag: speedtest               winget
+Orb                                Orb.Orb                           1.0.19.0     Tag: speedtest               winget
+CloudflareSpeedTest                XIU2.CloudflareSpeedTest          2.3.4        Tag: speedtest               winget
+Bredbandskollen CLI                dotse.bredbandskollen             1.2.2        Tag: speedtest               winget
+nPerf Speed Test                   nPerf.nPerf                       2.15.10      Tag: speedtest               winget
+Breitbandmessung                   zafaco.Breitbandmessung           3.11.0       Tag: speedtest               winget
+CloudflareWarpSpeedTest            peanut996.CloudflareWarpSpeedTest 1.5.15                                    winget
+USBDeview                          NirSoft.USBDeview                 3.07         Tag: usbflashdrivespeedtests winget
