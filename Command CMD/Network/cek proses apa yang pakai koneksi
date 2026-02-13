@@ -1,4 +1,3 @@
-#jika tidak bisa run cmd as administrator dulu
-run cmd as administrator
+#run cmd as administrator
 command :
 netstat -b
