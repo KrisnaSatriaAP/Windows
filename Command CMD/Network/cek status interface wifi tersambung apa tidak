@@ -1,0 +1,11 @@
+command :
+netsh interface show interface
+
+hasil
+
+Admin State    State          Type             Interface Name
+-------------------------------------------------------------------------
+Enabled        Disconnected   Dedicated        Local Area Connection
+Enabled        Connected      Dedicated        Ethernet 3
+Enabled        Connected      Dedicated        Wi-Fi
+Enabled        Connected      Dedicated        Ethernet_LAN
