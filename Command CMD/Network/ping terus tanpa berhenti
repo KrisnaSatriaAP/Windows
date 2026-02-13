@@ -1,0 +1,4 @@
+#jika tidak bisa, run cmd as administrator dulu
+
+command:
+ping 8.8.8.8 -t
