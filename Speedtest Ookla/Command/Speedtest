@@ -1,0 +1,14 @@
+command:
+
+1. 
+speedtest
+#akan speedtest server random
+
+2.
+lihat daftar server:
+speedtest -L
+Kalau mau pilih server tertentu:
+speedtest -s ID_SERVER
+
+cek daftar server di lokasi tertentu
+speedtest -L | findstr /i jakarta
