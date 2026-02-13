@@ -1,0 +1,4 @@
+#jika tidak bisa, run cmd as administrator dulu
+
+command:
+netsh wlan show profile
