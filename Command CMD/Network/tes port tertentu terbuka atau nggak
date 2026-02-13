@@ -1,0 +1,5 @@
+#jika tidak bisa, run cmd as administrator dulu
+#Kalau telnet belum aktif, harus enable dulu di Windows Features
+
+command:
+telnet google.com 80
