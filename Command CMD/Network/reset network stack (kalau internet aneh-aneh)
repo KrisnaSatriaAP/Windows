@@ -1,0 +1,39 @@
+#jika tidak bisa, run cmd as administrator dulu
+
+command:
+netsh int ip reset
+netsh winsock reset
+
+dampak :
+
+1. netsh int ip reset
+Ini akan reset TCP/IP stack Windows ke default pabrik.
+Artinya:
+- Hapus setting IP manual
+- Reset registry TCP/IP
+- Balikin konfigurasi jaringan ke awal
+Kalau kamu pakai:
+- Static IP → bakal hilang
+- Setting gateway manual → hilang
+- Custom network tweak → balik default
+
+2. netsh winsock reset
+Ini reset Winsock catalog (library yang dipakai aplikasi buat komunikasi jaringan)
+Biasanya dipakai kalau:
+- Internet connected tapi browser nggak bisa buka apa-apa
+- Kena malware
+- VPN atau aplikasi jaringan bikin error
+- Error “socket” atau koneksi aneh
+
+Dampaknya apa?
+Sering memperbaiki:
+- Internet no access padahal IP dapat
+- DNS error aneh
+- Browser nggak bisa konek tapi ping tembus
+- Network stack corrupt
+
+Efek samping:
+- Harus restart setelah dijalankan
+- VPN mungkin perlu reinstall
+- Software firewall pihak ketiga kadang perlu setup ulang
+- Static IP harus set ulang
