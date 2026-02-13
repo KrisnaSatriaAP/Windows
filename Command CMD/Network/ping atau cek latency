@@ -1,0 +1,3 @@
+command :
+ping 8.8.8.8
+ping google.com
