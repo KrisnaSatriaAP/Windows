@@ -1,4 +1,4 @@
-#jika tidak bisa run cmd as administrator dulu
+#jika tidak bisa, run cmd as administrator dulu
 command :
 wmic nic where "NetEnabled=true" get Name, Speed
 
