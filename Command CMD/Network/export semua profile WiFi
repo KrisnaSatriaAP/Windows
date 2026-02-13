@@ -1,0 +1,5 @@
+#jika tidak bisa, run cmd as administrator dulu
+#buat folder wifi di disk C atau ganti dengan folder lain yang sudah di buat, ganti bagian folder=C:\wifi
+
+command:
+netsh wlan export profile key=clear folder=C:\wifi
