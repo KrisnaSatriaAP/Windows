@@ -1,4 +1,4 @@
-#jika tidak bisa run cmd as administrator dulu
+#jika tidak bisa, run cmd as administrator dulu
 netsh wlan show interfaces
 
 hasil :
