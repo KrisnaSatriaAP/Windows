@@ -1,0 +1,4 @@
+supaya bisa file sharing enable guest access
+
+1. jalankan program run as administator
+2. restart perangkat

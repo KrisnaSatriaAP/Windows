@@ -1,0 +1,2 @@
+1. jalankan program run as administator
+2. restart perangkat
