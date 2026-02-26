@@ -5,19 +5,23 @@ Tutorial ini menjelaskan cara membuat folder bernama autorun.inf di Windows untu
 Tekan:
 - Windows + R
 - Lalu ketik:
+
 ```cmd```
 
 ✅ 2. Masuk ke Drive yang Mau Dibuat
 Misal di flashdisk drive E:
 Lalu ketik:
+
 ```E:```
 
 ✅ 3. Buat Folder autorun.inf
 Ketik:
+
 ```mkdir autorun.inf```
 
 ✅ 4. Kunci Folder Supaya Tidak Bisa Dihapus
 ketik:
+
 ```attrib +r +s +h autorun.inf```
 
 Artinya:
@@ -29,6 +33,7 @@ Folder jadi tersembunyi & lebih aman.
 
 ✅ 5. Cara Cek Berhasil
 Ketik:
+
 ```dir /a```
 
 Kalau muncul autorun.inf berarti sukses 🎉
@@ -38,8 +43,11 @@ Folder ini biasanya dipakai supaya virus tidak bisa bikin file autorun.inf sendi
 
 Kalau mau hapus:
 Ketik:
+
 ```attrib -r -s -h autorun.inf```
+
 Lalu:
+
 ```rmdir autorun.inf```
 
 📌 Tips Tambahan
