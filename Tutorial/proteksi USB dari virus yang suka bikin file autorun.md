@@ -31,6 +31,10 @@ Artinya:
 
 Folder jadi tersembunyi & lebih aman.
 
+🔐 Tambahan biar lebih kuat
+
+```mkdir autorun.inf\con```
+
 ✅ 5. Cara Cek Berhasil
 Ketik:
 
