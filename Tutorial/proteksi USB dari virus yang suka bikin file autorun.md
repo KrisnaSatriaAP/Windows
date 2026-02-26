@@ -52,6 +52,6 @@ Lalu:
 
 📌 Tips Tambahan
 Kalau di Explorer tidak kelihatan:
-Buka View
-Centang Hidden items
-Matikan Hide protected operating system files
+- Buka View
+- Centang Hidden items
+- Matikan Hide protected operating system files
