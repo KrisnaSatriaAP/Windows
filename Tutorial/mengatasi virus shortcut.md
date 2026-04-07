@@ -1,34 +1,34 @@
-# 📁 Flashdisk Shortcut Virus & WiFi Disconnect Fix Guide
+# 🦠 Flashdisk Shortcut Virus Fix Guide
 
-Panduan lengkap mengatasi masalah:
+Panduan lengkap mengatasi masalah file flashdisk berubah menjadi shortcut karena virus.
 
-- File flashdisk berubah menjadi shortcut
-- File flashdisk hilang (hidden oleh virus)
-- WiFi mati saat flashdisk dicolok
-- Konflik driver USB dengan adapter WiFi
+Dokumentasi ini membantu mengembalikan file yang tersembunyi tanpa menghapus data asli.
 
-Dokumentasi ini cocok digunakan untuk:
+Cocok digunakan untuk:
 
-- Teknisi sekolah
-- Admin lab komputer
-- Operator jaringan
-- Pengguna Windows umum
+- teknisi sekolah
+- admin lab komputer
+- operator jaringan
+- pengguna Windows umum
 
 ---
 
-# 🦠 Masalah 1 — Flashdisk Berubah Menjadi Shortcut
+# 📌 Gejala Flashdisk Terkena Virus Shortcut
 
-Virus shortcut biasanya **tidak menghapus file**, hanya menyembunyikan dengan atribut:
+Ciri-ciri umum:
 
-- Hidden
-- System
-- Read-only
+- File berubah menjadi shortcut (.lnk)
+- Folder asli tidak terlihat
+- Muncul file aneh seperti:
+  - autorun.inf
+  - script.vbs
+- Flashdisk terlihat kosong padahal ukuran masih terpakai
 
-File masih bisa dikembalikan.
+Virus shortcut biasanya **tidak menghapus file**, hanya menyembunyikannya.
 
 ---
 
-# 🔧 Solusi Mengembalikan File Menggunakan CMD
+# 🔧 Cara Mengembalikan File Menggunakan CMD
 
 ## Langkah 1 — Buka Command Prompt
 
