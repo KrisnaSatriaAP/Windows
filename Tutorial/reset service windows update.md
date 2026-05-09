@@ -6,10 +6,12 @@ net stop bits
 net stop msiserver
 ```
 
-lalu
+lalu jalankan lagi
 ```
 net start wuauserv
 net start cryptSvc
 net start bits
 net start msiserver
 ```
+
+Setelah itu restart PC, lalu coba update lagi.
