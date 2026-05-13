@@ -148,9 +148,6 @@ Pastikan:
 - [x] MikroTik **WinBox**
 - [x] **PuTTY**
 - [x] **WinSCP**
-- [x] **Zabbix** (versi desktop)
 - [x] Aplikasi lawas berbasis **Win32 / MFC**
 
 ---
-
-*Dibuat untuk referensi NOC — Windows 11 + Aplikasi Jaringan*
