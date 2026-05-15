@@ -1,0 +1,5 @@
+
+https://christitus.com/windows-tool/
+
+command
+irm christitus.com/win | iex
