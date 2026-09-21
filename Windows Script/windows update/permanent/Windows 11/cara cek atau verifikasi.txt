@@ -1,0 +1,5 @@
+verifikasi copas ini ke powershell : Get-Service wuauserv, UsoSvc, DoSvc, WaaSMedicSvc | Select Name, Status, StartType
+
+
+Kalau semua Status = Stopped dan StartType = Disabled, berarti layer service udah bener.
+Terus tes langsung buka Settings → Windows Update → Check for updates, kalau tetep muncul error/gak bisa connect, berarti berhasil.

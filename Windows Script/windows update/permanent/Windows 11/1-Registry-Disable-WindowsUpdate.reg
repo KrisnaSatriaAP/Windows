@@ -1,0 +1,24 @@
+Windows Registry Editor Version 5.00
+
+; ============================================
+; 1. REGISTRY EDITOR
+; Disable Windows Update via Registry
+; Cara pakai: double click file ini -> Yes -> OK
+; ============================================
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU]
+"NoAutoUpdate"=dword:00000001
+"AUOptions"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate]
+"SetDisableUXWUAccess"=dword:00000001
+"DisableWindowsUpdateAccess"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\wuauserv]
+"Start"=dword:00000004
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\UsoSvc]
+"Start"=dword:00000004
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DoSvc]
+"Start"=dword:00000004

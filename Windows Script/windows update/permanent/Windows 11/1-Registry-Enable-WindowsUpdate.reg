@@ -1,0 +1,32 @@
+Windows Registry Editor Version 5.00
+
+; ============================================
+; ENABLE WINDOWS UPDATE (Windows 10/11)
+; Membalikkan file "disable windows update"
+; Cara pakai: klik kanan -> Merge (atau double click) -> Yes -> OK
+; Setelah itu restart komputer.
+; ============================================
+
+; --- 1. Hapus policy yang memblokir Windows Update ---
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU]
+"NoAutoUpdate"=-
+"AUOptions"=-
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate]
+"SetDisableUXWUAccess"=-
+"DisableWindowsUpdateAccess"=-
+
+; --- 2. Kembalikan service ke default ---
+; Windows Update (wuauserv): Manual
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\wuauserv]
+"Start"=dword:00000003
+
+; Update Orchestrator (UsoSvc): Automatic (Delayed Start)
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\UsoSvc]
+"Start"=dword:00000002
+"DelayedAutostart"=dword:00000001
+
+; Delivery Optimization (DoSvc): Automatic (Delayed Start)
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DoSvc]
+"Start"=dword:00000002
+"DelayedAutostart"=dword:00000001
